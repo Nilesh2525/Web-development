@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    </script>-->
+    Enter number:<input type="text" id="t1" /><br />
+    Enter number:<input type="text" id="t2" /><br />
+    result <input type="text" id="t3" /><br />
+
+    <input type="button" value="Add" onclick="Addition()" />
+    <input type="button" value="sub" onclick="Sub()" />
+    <input type="button" value="Multi" onclick="Multi()" />
+    <input type="button" value="Division" onclick="Div()" />
+    <input type="button" value="clear" onclick="ClearData()" />
+    <br />
+    <div id="d1"></div>
+    <p id="p1"></p>
+    <h1 id="h1"></h1>
+    <i id="i1"></i>
+    <script>
+        // DOM Method and Property
+        function Addition() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) + parseInt(b);
+            document.getElementById("t3").value = sum;
+            document.getElementById("d1").innerHTML = "Sum is " + sum;
+            alert("sum is " + sum);
+
+        }
+        function ClearData() {
+            var res = confirm("Do you want clear the form ? ");
+            if (res == true) {
+                document.getElementById("t1").value = "";
+                document.getElementById("t2").value = "";
+                document.getElementById("t3").value = "";
+
+            }
+        }
+        function Sub() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sub = parseInt(a) - parseInt(b);
+            document.getElementById("t3").value = sub;
+            document.getElementById("p1").innerHTML = "Sub is " + sub;
+
+
+        }
+        function Multi() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var multi = parseInt(a) * parseInt(b);
+            document.getElementById("t3").value = multi;
+            document.getElementById("i1").innerHTML = "Multi is " + multi;
+
+
+        }
+        function Div() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var div = parseInt(a) / parseInt(b);
+            document.getElementById("t3").value = div;
+            document.getElementById("i1").innerHTML = "Div is " + div;
+            }
+
+
+     // Array in Java script
+
+      var num=[1,2,3,4,5,6]
+
+      var names=["Nilesh","Pankaj","Pratic","Sager","Girish","Sanket"]
+
+      //apend the element ata last in the list -----add at last
+      names.push("Rupesh");
+      names.unshift("Samir");  //add element at 1st position
+
+      //remove last element
+      names.pop();
+      names.shift();
+      //replace and add in beetwen
+       names.splice(1, 1, "Rohit", "Ashok");
+        names.sort();
+        names.reverse();
+       var list2= names.slice(2, 5); // count-1
+
+
+        for (let i = 0; i < names.length; i++) {
+            document.write("<br/>" + names[i]);
+        }
+        document.write("<br/>-----------------")
+        for (let i = 0; i < list2.length; i++) {
+            document.write("<br/>" + list2[i]);
+        }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        div{
+        background-color:green;
+        color:red;
+        }
+    </style>
+
+    <input type="button" id="btn1" value="Show" />
+    <input type="button" id="btn2" value="Hide" />
+    <div>
+        Greate Day
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).redy(function () {
+
+            $("#btn2").click(function () {
+                $("div").Hide(); // hide it is from jquery
+            });
+            $("#btn2").click(function () {
+                $("div").Show(); // hide it is from jquery
+            });
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+                <div id="d1"></div>
+            <script>
+                // array objects
+                var Student = [
+
+
+                    { id: 1,Rollno:101, name: "Nilesh", Percentage:80.70},
+                    { id: 2,Rollno:102, name: "Rupesh", Percentage:79.30},
+                    { id: 3,Rollno:103, name: "Sanket", Percentage:75.50},
+                    { id: 4,Rollno:104, name: "Girish", Percentage:72.20},
+                    { id: 5,Rollno:105, name: "Pratik", Percentage:76.90},
+                    { id: 6,Rollno:106, name: "Pankaj", Percentage:78.40}
+
+
+                ];
+
+
+                var data = "<table border='1'><tr><td>Id</td><td>Rolln0</td><td>Name</td><td>Parcentage</td></tr>";
+                for (var i = 0; i < Student.length; i++) {
+                    data += "<tr><td>" + Student[i].id + "</td><td>" + Student[i].name +
+                        "</td><td>" + Student[i].salary + "</td></tr>";
+                }
+                data += "</table>";
+                document.getElementById("d1").innerHTML = data;
+    </script>
+
+    
+
+
+</body>
+</html>
